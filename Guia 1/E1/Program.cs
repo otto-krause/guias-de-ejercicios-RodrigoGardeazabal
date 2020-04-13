@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace spisoo
+namespace E1
 {
-    public class tp
+    class Program
     {
         static void Main(string[] args)
         {
