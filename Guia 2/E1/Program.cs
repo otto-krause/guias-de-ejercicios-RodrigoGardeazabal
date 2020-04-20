@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace E1
 {
@@ -6,7 +7,21 @@ namespace E1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int num=0,opcion=1;
+            List<int> numeros=new List<int>();
+            Console.WriteLine("ingrese numeros, si ingresa 0 ya no podra ingresar");
+            while(opcion==1)
+            {
+                num=Int32.Parse(Console.ReadLine());
+                if(num!=0)
+                {
+                    numeros.add(num);
+                }
+                else
+                {
+                    opcion=2;
+                }
+            }
         }
     }
 }
