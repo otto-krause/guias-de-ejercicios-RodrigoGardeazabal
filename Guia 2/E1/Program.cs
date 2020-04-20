@@ -15,7 +15,7 @@ namespace E1
                 num=Int32.Parse(Console.ReadLine());
                 if(num!=0)
                 {
-                    numeros.add(num);
+                    numeros.Add(num);
                 }
                 else
                 {
