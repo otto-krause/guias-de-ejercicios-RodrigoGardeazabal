@@ -1575,12 +1575,12 @@ namespace E3
                                                                                                                     }
                                                                                                                     else
                                                                                                                     {
-                                                                                                                        if(pai=="Tunez")
+                                                                                                                        if(pai=="tunez")
                                                                                                                         {
                                                                                                                             i=0;
                                                                                                                             foreach (var j in Albumdemundial)
                                                                                                                             {
-                                                                                                                                if("Tunez"==Albumdemundial[i].paises())
+                                                                                                                                if("tunez"==Albumdemundial[i].paises())
                                                                                                                                 {
                                                                                                                                     totaldefig++;
                                                                                                                                 }
@@ -1965,7 +1965,7 @@ namespace E3
             }
             else
             {
-                Console.WriteLine("Felicidades su album ya esta completo");
+                Console.WriteLine("Felicidades su album ya esta completo con "+cantdel+" delanteros\n y "+cantmed+" mediocampistas");
             } 
             return otro;
         }
