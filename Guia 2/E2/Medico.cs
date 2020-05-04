@@ -7,6 +7,9 @@ namespace E2
     {
         string nombre,apellido,especialidad;
         int cantiturn=0;
+
+        public int Cantiturn { get => cantiturn; set => cantiturn = value; }
+
         public Medico(string nombre, string apellido, string especialidad, int cantiturn)
         {
             this.nombre=nombre;
