@@ -30,5 +30,9 @@ namespace E2
         {
             return cantiturn<50;
         }
+        public int nuevoturn()
+        {
+            return cantiturn++;
+        }
     }
 }
