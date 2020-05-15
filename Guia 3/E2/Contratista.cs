@@ -12,10 +12,6 @@ namespace E2
         }
 
         public int Cobrar1 { get => Cobrar; set => Cobrar = value; }
-        public int cobro()
-        {
-            return Cobrar;
-        }
         public int horasa()
         {
             return Trabajar;

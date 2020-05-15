@@ -61,7 +61,6 @@ namespace E2
                         }
                     }
                 }
-                Console.WriteLine(contratis[j].cobro());
                 j++;
             }
             if(total<=presupuesto)
