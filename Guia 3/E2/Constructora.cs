@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 namespace E2
 {
@@ -21,7 +20,6 @@ namespace E2
                 i.trabajar(cantidadDeHorasDeTrabajo);
                 acu += i.cobrar();
             }
-            Console.WriteLine(acu);
             return presupuesto > acu;
         }
     }
