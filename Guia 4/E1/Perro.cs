@@ -14,5 +14,9 @@ namespace E1
         {
             return energia-=20;
         }
+        public override int dormir()
+        {
+            return energia+=15;
+        }
     }
 }

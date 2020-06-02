@@ -12,41 +12,44 @@ namespace E1
             int opcion1=1;
             do
             {
-                Console.WriteLine("¿Con quien quiere realizar la accion?\nperro, pajaro, o prefiere salir");
+                Console.WriteLine("¿Que quiere realizar?\ncomer, jugar, dormir o prefiere salir");
                 opcion=Console.ReadLine();
                 switch (opcion)
                 {
-                    case "perro":
-                        Console.WriteLine("¿Que quiere realizar con el perro? ¿comer o jugar?");
+                    case "comer":
+                        Console.WriteLine("¿Con quien quiere realizar accion? ¿perro o pajaro?");
                         opcion=Console.ReadLine();
                         switch (opcion)
                         {
-                            case "comer":
+                            case "perro":
                                 Console.WriteLine("El perro comio, ahora tiene de energia:"+perrito.comer());
                                 break;
-                            case "jugar":
-                                Console.WriteLine("El perro jugo, ahora tiene de energia:"+perrito.jugar());
+                            case "pajaro":
+                                Console.WriteLine("El pajaro comio, ahora tiene de energia:"+pajarito.comer());
                                 break;
                             default:
                                 Console.WriteLine("ingrese una opcion real");
                                 break;
                         }
                         break;
-                    case "pajaro":
-                        Console.WriteLine("¿Que quiere realizar con el pajaro?¿comer o jugar?");
+                    case "jugar":
+                        Console.WriteLine("¿Con quien quiere realizar accion? ¿perro o pajaro?");
                         opcion=Console.ReadLine();
                         switch (opcion)
                         {
-                            case "comer":
-                                Console.WriteLine("El pajaro comio, ahora tiene de energia:"+pajarito.comer());
+                            case "perro":
+                                Console.WriteLine("El perro jugo, ahora tiene de energia:"+perrito.jugar());
                                 break;
-                            case "jugar":
+                            case "pajaro":
                                 Console.WriteLine("El pajaro jugo, ahora tiene de energia:"+pajarito.jugar());
                                 break;
                             default:
                                 Console.WriteLine("ingrese una opcion real");
                                 break;
-                        }
+                        }    
+                        break;
+                    case "dormir":
+                        Console.WriteLine("Los animales durmieron, el perro tiene de energia "+perrito.dormir()+"y el pajaro "+pajarito.dormir());
                         break;
                     case "salir":
                         opcion1=2;

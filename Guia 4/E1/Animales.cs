@@ -9,5 +9,6 @@ namespace E1
         }
         public abstract int comer();
         public abstract int jugar();
+        public abstract int dormir();
     }
 }
