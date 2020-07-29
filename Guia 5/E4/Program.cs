@@ -6,7 +6,11 @@ namespace E4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Clinica clinica= new Clinica();
+            string espe;
+            Console.WriteLine("Ingrese la especialidad:");
+            espe=Console.ReadLine();
+            clinica.consulta(espe);
         }
     }
 }
