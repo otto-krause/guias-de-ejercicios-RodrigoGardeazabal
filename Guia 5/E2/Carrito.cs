@@ -8,8 +8,8 @@ namespace E2
         List<Producto> productos = new List<Producto>();
         public Carrito()
         {
-            Producto produ1 = new Producto ("Flan", 150);
-            Producto produ2 = new Producto ("Leche", 35);
+            Producto produ1 = new Producto ("Flan", 50);
+            Producto produ2 = new Producto ("Leche", 40);
             productos.Add(produ1);
             productos.Add(produ2);
         }
