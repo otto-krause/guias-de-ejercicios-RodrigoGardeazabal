@@ -11,7 +11,7 @@ namespace E9
             Console.WriteLine("Ingrese numeros ilimitadamente y 0 para finalizar el ingreso");
             int numeros=0;
             int seguir = 1;
-            while(seguir!=0)
+            do
             {
                 numeros=Int32.Parse(Console.ReadLine());
                 switch(numeros)
@@ -24,6 +24,7 @@ namespace E9
                         break;
                 }
             }
+            while(seguir!=0);
             Console.WriteLine("Los numeros ingresados fueron:");
             numero.ForEach(i => Console.WriteLine(i));
             Console.WriteLine("\nDe ellos, la cantidad de impares es:");
